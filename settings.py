@@ -24,7 +24,7 @@ DATABASE_USER = 'root'             # Not used with sqlite3.
 try:
     from local_settings import DATABASE_PASSWORD
 except:
-    DATABASE_PASSWORD = 'shSTAGE'         # Not used with sqlite3.
+    DATABASE_PASSWORD = 'root'         # Not used with sqlite3.
 
 DATABASE_HOST = ''             # Set to empty string for localhost. Not used with sqlite3.
 DATABASE_PORT = ''             # Set to empty string for default. Not used with sqlite3.
@@ -86,11 +86,10 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = 'codepad.urls'
 
-TEMPLATE_DIRS = (
-    # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
-    # Always use forward slashes, even on Windows.
-    # Don't forget to use absolute paths, not relative paths.
+TEMPLATE_DIRS = (os.path.join(os.path.dirname(__file__), 'templates'),
+
 )
+
 
 INSTALLED_APPS = (
     'django.contrib.auth',
@@ -98,8 +97,10 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.sites',
     'django.contrib.messages',
+    'apps.aboutme',
     # Uncomment the next line to enable the admin:
-    'django.contrib.admin',
+   'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
+ #   'apps.aboutme',
 )

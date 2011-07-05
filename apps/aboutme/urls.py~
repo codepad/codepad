@@ -1,0 +1,11 @@
+from django.conf.urls.defaults import *
+
+# Uncomment the next two lines to enable the admin:
+# from django.contrib import admin
+# admin.autodiscover()
+
+urlpatterns = patterns('apps.emailers.views',
+    url(r'^$', 'get_all_emailers', name='get-all-emailers'),
+    url(r'^preview/(?P<slug>.+)/', 'html_preview_handler', name='html-preview-handler'),
+)
+
