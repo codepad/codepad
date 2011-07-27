@@ -13,7 +13,7 @@ TEMPLATE_DEBUG = DEBUG
 PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
 
 ADMINS = (
-    # ('Your Name', 'your_email@domain.com'),
+     ('Shashikant Sonawane', 'shashi.sonawane@gmail.com'),
 )
 
 MANAGERS = ADMINS
