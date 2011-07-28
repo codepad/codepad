@@ -12,7 +12,7 @@ from django.conf import settings
 
 
 # Create your views here.
-
+# TO DO:Please user decorator for login
 def aboutme(request):
     context = RequestContext(request)
     return render_to_response('resume.html', context_instance=context)
