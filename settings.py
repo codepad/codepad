@@ -16,6 +16,8 @@ ADMINS = (
      ('Shashi Sonawane', 'shashi.sonawane@gmail.com'),
 )
 
+BASE_URL = 'http://127.0.0.1:8000'
+
 MANAGERS = ADMINS
 
 DATABASE_ENGINE = 'mysql'           # 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
@@ -24,7 +26,7 @@ DATABASE_USER = 'root'             # Not used with sqlite3.
 try:
     from local_settings import DATABASE_PASSWORD
 except:
-    DATABASE_PASSWORD = 'root'         # Not used with sqlite3.
+    DATABASE_PASSWORD = 'shSTAGE'         # Not used with sqlite3.
 
 DATABASE_HOST = ''             # Set to empty string for localhost. Not used with sqlite3.
 DATABASE_PORT = ''             # Set to empty string for default. Not used with sqlite3.

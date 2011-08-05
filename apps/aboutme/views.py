@@ -15,4 +15,5 @@ from django.conf import settings
 # TO DO:Please user decorator for login
 def aboutme(request):
     context = RequestContext(request)
-    return render_to_response('resume.html', context_instance=context)
+    context['BASE_URL'] = settings.BASE_URL
+    return render_to_response('people.html', context_instance=context)
