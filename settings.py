@@ -21,9 +21,9 @@ BASE_URL = 'http://127.0.0.1:8000'
 MANAGERS = ADMINS
 
 DATABASE_ENGINE = 'mysql'           # 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-DATABASE_NAME = 'my'             # Or path to database file if using sqlite3.
-DATABASE_USER = 'adminIMRShHu'             # Not used with sqlite3.
-DATABASE_PASSWORD = 'xmlcFBgz1S_R'         # Not used with sqlite3.
+DATABASE_NAME = 'shashisonawane'             # Or path to database file if using sqlite3.
+DATABASE_USER = 'adminlDmRNRS'             # Not used with sqlite3.
+DATABASE_PASSWORD = 'fn4eyi6YvuDv'         # Not used with sqlite3.
 
 DATABASE_HOST = 'mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/'             # Set to empty string for localhost. Not used with sqlite3.
 DATABASE_PORT = ''             # Set to empty string for default. Not used with sqlite3.
